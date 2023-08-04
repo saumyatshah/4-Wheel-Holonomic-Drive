@@ -1,0 +1,16 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\common.o"
+".\objects\gpio.o"
+".\objects\i2c.o"
+".\objects\lcd.o"
+".\objects\rcc.o"
+".\objects\spi.o"
+".\objects\timer.o"
+".\objects\usart.o"
+".\objects\startup_stm32f407xx.o"
+".\objects\system_stm32f4xx.o"
+--strict --scatter ".\Objects\4_w_Omni_Drive.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\4_w_Omni_Drive.map" -o .\Objects\4_w_Omni_Drive.axf
